@@ -14,7 +14,7 @@ namespace ClassLibrary
         private string mClothesName;
         //public ClsClothes()
         //{
-
+        //       Matthew was here
         //}
         //Public property for the product number
         public Int32 ClothesCost
