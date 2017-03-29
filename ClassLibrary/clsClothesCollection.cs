@@ -113,6 +113,8 @@ namespace ClassLibrary
             clsDataConnection DB = new clsDataConnection();
             //execute the stored procedure
             DB.Execute("sproc_tblClothes_SelectAll");
+            //populate the array list with the data table
+            PopulateArray(DB);
             //get the count of records
             RecordCount = DB.Count;
             //while there are records to process
@@ -167,7 +169,8 @@ namespace ClassLibrary
             DB.AddParameter("@ClothesName", ClothesName);
             //execute the stored procedure
             DB.Execute("sproc_tblClothes_FilterByClothesName");
-            //          sproc_tblClothes_FilterByClothesName
+            //populate the array list with the data table
+            PopulateArray(DB);
 
         }
         void PopulateArray(clsDataConnection DB)
@@ -187,6 +190,14 @@ namespace ClassLibrary
                 clsClothes Clothingitem = new clsClothes();
                 //read in the fields from the current record
                 Clothingitem.Active = Convert.ToBoolean(DB.DataTable.Rows[Index]["Active"]);
+                Clothingitem.ProductNo = Convert.ToInt32(DB.DataTable.Rows[Index]["ProductNo"]);
+                Clothingitem.ClothesCost = Convert.ToInt32(DB.DataTable.Rows[Index]["ClothesCost"]);
+                Clothingitem.ClothesDescription = Convert.ToString(DB.DataTable.Rows[Index]["ClothesDescription"]);
+                Clothingitem.ClothesName = Convert.ToString(DB.DataTable.Rows[Index]["ClothesName"]);
+                //add the record to the private data member
+                mClothesList.Add(Clothingitem);
+                //point at the next record
+                Index++;
             }
         }
     }

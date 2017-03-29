@@ -127,43 +127,43 @@ namespace ClassLibrary
             Assert.IsFalse(Found);
 
         }
-        //[TestMethod]
-        //public void UpdateMethodOK()
-        //{
-        //    //create an instance of the class we want to create
-        //    clsClothesCollection AllClothes = new clsClothesCollection();
-        //    //create the item of test data
-        //    clsClothes TestItem = new clsClothes();
-        //    //var to store the primary key
-        //    Int32 PrimaryKey = 0;
-        //    //set it's properties
-        //    TestItem.Active = true;
-        //    TestItem.ClothesCost = 1;
-        //    TestItem.ClothesDescription = "Small White T Shirt";
-        //    TestItem.ClothesName = "White T Shirt";
-        //    TestItem.ProductNo = 1;
-        //    //set Clothing Item to the test data
-        //    AllClothes.ClothesName = TestItem;
-        //    //add the record
-        //    PrimaryKey = AllClothes.Add();
-        //    //set the primary key of the test data
-        //    TestItem.ProductNo = PrimaryKey;
-        //    //modify the test data
-        //    TestItem.Active = false;
-        //    TestItem.ClothesCost = 3;
-        //    TestItem.ClothesDescription = "Large White T Shirt";
-        //    TestItem.ClothesName = "Black T Shirt";
-        //    TestItem.ProductNo = 3;
-        //    //set the record based on the test data
-        //    AllClothes.ClothesName = TestItem;
-        //    //update the record
-        //    AllClothes.Update();
-        //    //find the record
-        //    AllClothes.ClothesName.Find(PrimaryKey);
-        //    //test to see ClothesName matches the test data
-        //    Assert.AreEqual(AllClothes.ClothesName, TestItem);
+        [TestMethod]
+        public void UpdateMethodOK()
+        {
+            //create an instance of the class we want to create
+            clsClothesCollection AllClothes = new clsClothesCollection();
+            //create the item of test data
+            clsClothes TestItem = new clsClothes();
+            //var to store the primary key
+            Int32 PrimaryKey = 0;
+            //set it's properties
+            TestItem.Active = true;
+            TestItem.ClothesCost = 1;
+            TestItem.ClothesDescription = "Small White T Shirt";
+            TestItem.ClothesName = "White T Shirt";
+            TestItem.ProductNo = 1;
+            //set Clothing Item to the test data
+            AllClothes.ClothesName = TestItem;
+            //add the record
+            PrimaryKey = AllClothes.Add();
+            //set the primary key of the test data
+            TestItem.ProductNo = PrimaryKey;
+            //modify the test data
+            TestItem.Active = false;
+            TestItem.ClothesCost = 3;
+            TestItem.ClothesDescription = "Large White T Shirt";
+            TestItem.ClothesName = "Black T Shirt";
+            TestItem.ProductNo = 3;
+            //set the record based on the test data
+            AllClothes.ClothesName = TestItem;
+            //update the record
+            AllClothes.Update();
+            //find the record
+            AllClothes.ClothesName.Find(PrimaryKey);
+            //test to see ClothesName matches the test data
+            Assert.AreEqual(AllClothes.ClothesName, TestItem);
 
-        //}
+        }
         [TestMethod]
         public void FilterByClothesNameOK()
         {
@@ -185,7 +185,7 @@ namespace ClassLibrary
             clsClothesCollection FilteredClothes = new clsClothesCollection();
             FilteredClothes.FilterByClothesName("");
             //test to see that there are no records
-            Assert.AreEqual(AllClothes.Count, FilteredClothes.Count);
+            Assert.AreEqual(0, FilteredClothes.Count);
         }
     }
 }

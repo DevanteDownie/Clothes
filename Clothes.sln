@@ -3,72 +3,34 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{D1C308C7-BDD0-4E9F-A404-06F643D292BB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer testing", "Customer Testing\Customer testing.csproj", "{162A00A3-93CC-4078-860B-C235369972CC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clothes testing", "Clothes testing\Clothes testing.csproj", "{58B3C81A-3728-436D-AEE0-558A9DA0AC83}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Clothes", ".", "{D170916F-4065-4683-93A5-B944E0FF2FB9}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61965"
+		Debug.AspNetCompiler.PhysicalPath = "..\Clothes\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61965\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61965"
+		Release.AspNetCompiler.PhysicalPath = "..\Clothes\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61965\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61965"
+		SlnRelativePath = "..\Clothes\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|ARM = Debug|ARM
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|Any CPU = Release|Any CPU
-		Release|ARM = Release|ARM
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Debug|ARM.Build.0 = Debug|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Debug|x64.Build.0 = Debug|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Debug|x86.Build.0 = Debug|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Release|ARM.ActiveCfg = Release|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Release|ARM.Build.0 = Release|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Release|x64.ActiveCfg = Release|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Release|x64.Build.0 = Release|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Release|x86.ActiveCfg = Release|Any CPU
-		{D1C308C7-BDD0-4E9F-A404-06F643D292BB}.Release|x86.Build.0 = Release|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Debug|ARM.Build.0 = Debug|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Debug|x64.Build.0 = Debug|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Debug|x86.Build.0 = Debug|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Release|ARM.ActiveCfg = Release|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Release|ARM.Build.0 = Release|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Release|x64.ActiveCfg = Release|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Release|x64.Build.0 = Release|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Release|x86.ActiveCfg = Release|Any CPU
-		{162A00A3-93CC-4078-860B-C235369972CC}.Release|x86.Build.0 = Release|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Debug|ARM.Build.0 = Debug|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Debug|x64.Build.0 = Debug|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Debug|x86.Build.0 = Debug|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Release|ARM.ActiveCfg = Release|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Release|ARM.Build.0 = Release|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Release|x64.ActiveCfg = Release|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Release|x64.Build.0 = Release|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Release|x86.ActiveCfg = Release|Any CPU
-		{58B3C81A-3728-436D-AEE0-558A9DA0AC83}.Release|x86.Build.0 = Release|Any CPU
+		{D170916F-4065-4683-93A5-B944E0FF2FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D170916F-4065-4683-93A5-B944E0FF2FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
